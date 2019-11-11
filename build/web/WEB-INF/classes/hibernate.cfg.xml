@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/apppetshopufsmmaiconprogramacaoa?zeroDateTimeBehavior=convertToNull</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">123456</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.pool_size">10</property>
+        <property name="hibernate.hbm2dll.auto">create</property>
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Pessoa" />
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.PF" />
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.PJ" />
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.DocReceita"/>
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.CPF" />
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.CNPJ" />
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Telefone"/>
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Endereco"/>
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Animal"/>
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Cachorro"/>
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Gato"/>
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Servico"/>
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Banho"/>
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Consulta" />
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Tosa" />
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Vacina" />
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Repteis"/>
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Passaros"/>
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Parto" />
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Peixes"/>
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Roedores"/>
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.Cirurgia"/>
+        <mapping class="br.ufsm.sci.programacaoa.maicon.controller.AtendimentoEmergencia"/>
+    </session-factory>
+</hibernate-configuration>
